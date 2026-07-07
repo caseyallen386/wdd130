@@ -1,0 +1,52 @@
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+main {
+    width: 50vw;
+}
+
+aside {
+    width: 25vw;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px grey ;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 2px solid black;
+    text-align: center;
+}
