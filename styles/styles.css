@@ -1,6 +1,24 @@
+/* Blue color palette
+light
+#d1dbe4,
+#a3b7ca,
+#7593af,
+#476f95
+#194a7a
+dark
+
+forest breeze colors
+ #f1ddbf, - tan
+ #525e75, - dark blue
+ #78938a  - gray green
+ #92ba92. - lighterish green
+
+*/
+
 :root {
-    --primary-color: darkblue;
-    --accent-color: #000;
+    --primary-color: #525e75;
+    --light-color: #d1dbe4;
+    --border-color: #000;
 }
 
 * {
@@ -9,9 +27,17 @@
     box-sizing: border-box;
 }
 
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
@@ -19,24 +45,23 @@ nav a {
     display: block;
     padding: 20px;
     color: #fff;
+    text-decoration: none;
 }
 
 h1 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 main {
-    max-width: 50vw;
-    width: 50vw;
-    margin-left: 12.5vw;
-    float: left;
+    grid-column: 2/3;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px grey;
     float: right;
@@ -45,9 +70,10 @@ main img {
 
 aside {
     position: relative;
-    max-width: 25vw;
-    width: fit-content;
-    float: right;
+    width: 20rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
 }
 
 aside h2 {
@@ -58,7 +84,7 @@ aside h2 {
 }
 
 aside img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     
 }
@@ -71,7 +97,7 @@ p {
 
 footer {
     margin-top: 2rem;
-    border-top: 2px solid var(--accent-color);
+    border-top: 2px solid var(--border-color);
     text-align: center;
     clear: both;
 }
@@ -79,11 +105,18 @@ footer {
 
 /* Class Selectors */
 
+.grid {
+    display: grid;
+    justify-content: center;
+}
+
+
+
 .box {
     margin: 1rem;
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--border-color);
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--light-color);
     color: #333;
 }
 

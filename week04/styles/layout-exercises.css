@@ -19,37 +19,43 @@ div {
 .one {
     width: 200px;
     height: 200px;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex {
     background-color: #aba;
-    /* write declarations here */
+    display: flex;
 
 }
 
 .grid {
     background-color: #abb;
-    /* enter declarations here */
+    display: grid;
 
 }
 
 .container2 {
-    /* write declarations here */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 
 .two {
     background-color: #ace;
     height: 100px;
+    
 }
 
 .container3 {
-    /* write declarations here */
+    display: grid;
+    grid-template-columns: 1f;
 
 }
 
 .columns-3 {
-    /* write declaration here */
+    grid-column: span 3;
 
 }
 
