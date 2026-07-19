@@ -120,6 +120,10 @@ footer {
     color: #333;
 }
 
+.box li {
+    margin-left: 10px;
+}
+
 .clear {
     clear: both;
 }
