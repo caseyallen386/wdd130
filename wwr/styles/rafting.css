@@ -1,6 +1,15 @@
+/* 
+#c7522a,
+#e5c185,
+#fbf2c4,
+#74a892 
+#008585.
+
+*/
+
 :root {
     --secondary-color: #74a892;
-    --accent2-color: #e5c185;
+    --accent2-color: #c7522a;
     --heading-font: "Georgia", sans-serif;
     --body-font: Arial, Helvetica , sans-serif;
 }
