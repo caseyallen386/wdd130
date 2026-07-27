@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <form action="#" method="post">
+            <fieldset class="contact-info">
+                <legend>Contact Info</legend>
+                <div>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div>
+
+                <div>
+                    <label for="useremail">Email</label>
+                    <input type="email" name="useremail" id="useremail">    
+                </div>
+            </fieldset>
+
+            <fieldset class="user-poll">
+                <legend>Questions</legend>
+                <div>
+
+                    <label for="browser">Favorite Browser</label>
+                    <select name="browser" id="browser" >
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                </div>
+                <div>
+                    <input type="radio" name="test" id="test">
+                </div>
+
+                <div>
+                    <label for="pet" class="checkbox">Do you have a pet?</label>
+                    <input type="checkbox" name="pet" id="pet" class="checkbox">
+                </div>
+
+                <div>
+                    <label for="feedback">Places you've been:</label>
+                    <textarea name="feedback" id="feedback" rows="5"></textarea>
+                </div>
+
+                <button type="submit">Submit Poll</button>
+            </fieldset>
+
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

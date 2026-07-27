@@ -1,0 +1,20 @@
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead, tfoot {
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+}
+
+td, th {
+    padding: 0.75rem 1rem;
+}
+
+tbody td, tbody th {
+    border: 1px solid #000;
+}
+
