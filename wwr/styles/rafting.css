@@ -9,7 +9,6 @@
 
 :root {
     --secondary-color: #008585;
-    --accent2-color: #c7522a;
     --heading-font: "Georgia", sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -184,16 +183,16 @@ textarea {
     display: block;
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: navy;
+    background-color: #000080;
     color: #fff;
-    border: 1px solid navy;
+    border: 1px solid #000080;
     border-radius: 0.75rem;
     margin-top: 1rem;
 }
 
 .contact-form .button:hover {
-    background-color: rgb(27, 27, 171);
-    border: 1px solid rgb(27, 27, 171);
+    background-color: #1b1bab;
+    border: 1px solid #1b1bab;
 }
 
 .adventure {
