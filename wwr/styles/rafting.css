@@ -126,6 +126,7 @@ header > nav a {
 .address {
     width: 100vw;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .address p {
@@ -152,7 +153,7 @@ header > nav a {
     margin-left: 20px;
 }
 
-.contact-form div {
+.contact-info {
     margin-bottom: 0.5rem;
 }
 
@@ -171,6 +172,10 @@ header > nav a {
     margin-top: 30px;
 }
 
+.radio {
+    margin-bottom: 0.5rem;
+}
+
 textarea {
     width: 100%;
 }
@@ -183,6 +188,7 @@ textarea {
     color: #fff;
     border: 1px solid navy;
     border-radius: 0.75rem;
+    margin-top: 0.75rem;
 }
 
 .contact-form .button:hover {
