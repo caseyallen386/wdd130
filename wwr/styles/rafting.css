@@ -11,9 +11,8 @@
     --secondary-color: #008585;
     --accent2-color: #c7522a;
     --heading-font: "Georgia", sans-serif;
-    --body-font: Arial, Helvetica , sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
-
 
 /* CSS Reset */
 * {
@@ -69,27 +68,11 @@ header > nav a {
     padding: 1rem;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    align-items: center;
-    text-align: right;
-}
 
-footer .footer-content {
-    grid-column: 2/2;
-}
-
-footer .socialmedia {
-    grid-column: 3;
-}
 
 .hero {
     position: relative;
 }
-
 
 .hero h1 {
     position: absolute;
@@ -119,8 +102,6 @@ footer .socialmedia {
     margin-left: 0.5rem;
 }
 
-
-
 .hero article img {
     width: 125px;
     float: right;
@@ -142,6 +123,73 @@ footer .socialmedia {
     max-height: 150px;
 }
 
+.address {
+    width: 100vw;
+    text-align: center;
+}
+
+.address p {
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    margin: 0 auto;
+    
+}
+
+.map iframe {
+    width: 40vw;
+    height: 100%;
+}
+
+
+.contact-form {
+    width: 35vw;
+    margin-left: 20px;
+}
+
+.contact-form div {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info input {
+    width: 70%;
+    padding: 0.5rem;
+}
+
+.contact-info label {
+    display: inline-block;
+    width: 25%;
+}
+
+.message-purpose {
+    display: flex;
+    margin-top: 30px;
+}
+
+textarea {
+    width: 100%;
+}
+
+.contact-form .button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: navy;
+    color: #fff;
+    border: 1px solid navy;
+    border-radius: 0.75rem;
+}
+
+.contact-form .button:hover {
+    background-color: rgb(27, 27, 171);
+    border: 1px solid rgb(27, 27, 171);
+}
+
 .adventure {
     display: flex;
     flex-wrap: wrap;
@@ -156,8 +204,8 @@ footer .socialmedia {
 }
 
 .adventure img {
-    height: 75px;
-    width: 100px;
+    height: 175px;
+    width: 175px;
 }
 
 .adventure figure {
@@ -166,4 +214,25 @@ footer .socialmedia {
 
 .socialmedia img {
     height: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    text-align: right;
+    padding: 1.5rem;
+}
+
+footer .footer-content {
+    width: 100vw;
+    text-align: center;
+    position: relative;
+}
+
+footer .socialmedia {
+    position: absolute;
+    right: 0;
 }
