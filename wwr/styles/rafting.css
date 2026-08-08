@@ -53,6 +53,10 @@ nav a,
     text-decoration: none;
 }
 
+.hidden {
+    display: none;
+}
+
 .fine-print {
     font-size: small;
     font-style: italic;
