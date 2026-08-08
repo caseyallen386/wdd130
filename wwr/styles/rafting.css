@@ -304,14 +304,16 @@ textarea {
 }
 
 .call-to-action {
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
 }
 
 .call-to-action .button {
     padding: 1rem 1.5rem;
     font-size: larger;
-    margin: 0 auto;
+    
 }
 
 .trip-details h2 {
@@ -344,7 +346,7 @@ textarea {
 }
 
 
-.trip-schedule h2, .trip-details h2 {
+.trip-schedule > h2, .trip-details h2 {
     
     margin-bottom: 1rem;
 }
