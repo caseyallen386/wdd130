@@ -11,6 +11,8 @@
     --secondary-color: #008585;
     --heading-font: "Georgia", sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
+    --button-color: #000080;
+    --button-hover: #1b1bab;
 }
 
 /* CSS Reset */
@@ -26,6 +28,8 @@ body {
     font-style: normal;
     color: #333;
 }
+
+/* General Styles */
 
 nav,
 p,
@@ -48,6 +52,53 @@ nav a,
 .socialmedia a {
     text-decoration: none;
 }
+
+.fine-print {
+    font-size: small;
+    font-style: italic;
+}
+
+.button {
+    
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: var(--button-color);
+    color: #fff;
+    border: 1px solid var(--button-color);
+    border-radius: 0.75rem;
+    width: fit-content;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+    border: 1px solid var(--button-hover);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.grid h3 {
+    margin: 1rem 0;
+}
+
 
 header {
     display: grid;
@@ -98,7 +149,7 @@ header > nav a {
 .hero img {
     width: 100vw;
     height: auto;
-    margin-left: 0.5rem;
+    
 }
 
 .hero article img {
@@ -183,17 +234,51 @@ textarea {
     display: block;
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: #000080;
-    color: #fff;
-    border: 1px solid #000080;
-    border-radius: 0.75rem;
     margin-top: 1rem;
 }
 
-.contact-form .button:hover {
-    background-color: #1b1bab;
-    border: 1px solid #1b1bab;
+
+
+.subscribe {
+    padding: 30px 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.subscribe h2 {
+    margin: 30px 0;
+}
+
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-around;
+
+}
+.subscribe-form .contact-info {
+    width: 60vw;
+}
+
+.subscribe-form input {
+    width: 80%;
+}
+
+.subscribe-form label {
+    width: 50px;
+}
+
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-button .button {
+    font-size: larger;
+} 
+
 
 .adventure {
     display: flex;
@@ -201,6 +286,7 @@ textarea {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    
 }
 
 .adventure h2 {
@@ -215,6 +301,66 @@ textarea {
 
 .adventure figure {
     margin: 1rem;
+}
+
+.call-to-action {
+    display: block;
+    text-align: center;
+}
+
+.call-to-action .button {
+    padding: 1rem 1.5rem;
+    font-size: larger;
+    margin: 0 auto;
+}
+
+.trip-details h2 {
+    font-size: 2rem;
+}
+
+
+.trip-description {
+    display: flex;
+    margin-top: 15px;
+}
+
+.trip-description img {
+    width: 400px;
+    height: auto;
+}
+
+.trip-description div {
+    padding: 1rem;
+}
+
+.trip-description p {
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.trip-schedule, .trip-details h2 {
+    text-align: center;
+    
+}
+
+
+.trip-schedule h2, .trip-details h2 {
+    
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 80vw;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.5rem;
 }
 
 .socialmedia img {
